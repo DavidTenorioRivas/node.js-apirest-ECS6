@@ -1,0 +1,15 @@
+extends main_layout
+block content
+    form(method="post" action="user" enctype="application/x-www-form-urlencoded")
+        div.panel-heading
+            h1 Welcome to #{title}
+        div.panel-body
+            div.form-group
+                label.lblUser(for='inputUser') Ingrese usuario
+                input(type='text' name="user" id='inputUser' class="form-control")
+            div.form-group
+                label.lblUser(for='inputPin') Ingrese pin
+                input(type='password' name="pin" id='inputPin' class="form-control")
+        div.panel-footer
+            //button.btn.waves-effect.waves-light#btnLogin Acceder
+            input(type="submit" class="btn waves-effect waves-light" formaction="user" value="Acceder")
