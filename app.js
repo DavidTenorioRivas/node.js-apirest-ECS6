@@ -15,6 +15,7 @@ handleConnection.connect({
     password: config.db.password,
     database: config.db.database,
     port: config.db.port
+
 }).then((connectionObject)=> {
     console.log('Ready');
     let userEntity = UserEntity(connectionObject);
